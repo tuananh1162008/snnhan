@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+      <link rel="shortcut icon" href="./f42498c0-6b81-4a3f-a0a2-4efffa0caeb2.jpeg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật Nguyễn Thanh Nhàn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* LOGIN PAGE STYLES */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5d5b8 0%, #ffccb3 100%);
+            transition: opacity 0.5s ease;
+        }
+
+        .login-container.hidden {
+            display: none;
+        }
+
+        .login-box {
+            background: white;
+            padding: 50px 45px;
+            border-radius: 25px;
+            border: 5px solid #ff7a7a;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 400px;
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .avatar-container {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: bounce 2s ease-in-out infinite;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            background: white;
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .login-box h1 {
+            font-size: 1.8em;
+            color: #ff7a7a;
+            margin-bottom: 15px;
+            text-shadow: none;
+        }
+
+        .login-box p {
+            font-size: 0.95em;
+            color: #999;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .password-input-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .password-input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 1em;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .password-input-group input:focus {
+            outline: none;
+            border-color: #ff7a7a;
+            box-shadow: 0 0 0 3px rgba(255, 122, 122, 0.1);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            background: linear-gradient(135deg, #ff7a7a 0%, #ff6b6b 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 20px rgba(255, 122, 122, 0.3);
+            letter-spacing: 1px;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 122, 122, 0.4);
+        }
+
+        .login-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .error-message {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-weight: bold;
+            animation: shake 0.5s ease;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        /* BIRTHDAY PAGE STYLES */
+        .birthday-container {
+            display: none;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #FFE4EC 0%, #FFB6C1 100%);
+            padding: 60px 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .birthday-container.show {
+            display: block;
+        }
+
+        .birthday-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cake-emoji {
+            font-size: 120px;
+            margin-bottom: 30px;
+            animation: bounce 2s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        .title-section {
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .title-section h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            animation: slideInDown 1s ease-out;
+        }
+
+        .name-gradient {
+            font-size: 3em;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6bcf7f, #4ecdc4);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            animation: gradientShift 3s ease infinite, slideInUp 1s ease-out 0.3s backwards;
+            margin-bottom: 20px;
+        }
+
+        .letter-container {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideInUp 1s ease-out 0.5s backwards;
+            margin-bottom: 40px;
+        }
+
+        .letter-header {
+            background: linear-gradient(135deg, #FF6B9D 0%, #D6336C 100%);
+            color: white;
+            font-size: 2em;
+            margin: -50px -40px 30px -40px;
+            padding: 25px 40px;
+            font-style: italic;
+            font-weight: bold;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .letter-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .letter-content {
+            text-align: left;
+            font-size: 1.1em;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .letter-content p {
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out backwards;
+            text-align: justify;
+        }
+
+        .letter-content p:nth-child(1) { animation-delay: 0.7s; }
+        .letter-content p:nth-child(2) { animation-delay: 0.85s; }
+        .letter-content p:nth-child(3) { animation-delay: 1s; }
+        .letter-content p:nth-child(4) { animation-delay: 1.15s; }
+        .letter-content p:nth-child(5) { animation-delay: 1.3s; }
+
+        .wishes-list {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 30px;
+            margin: 30px auto;
+            max-width: 700px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .wish-item {
+            padding: 18px 20px;
+            margin: 15px 0;
+            background: white;
+            border-radius: 20px;
+            border: 2px solid transparent;
+            font-size: 1.05em;
+            color: #333;
+            animation: slideInLeft 0.8s ease-out backwards;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wish-item::before {
+            content: '';
+            position: absolute;
+            left: -100%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s ease;
+            pointer-events: none;
+        }
+
+        .wish-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            padding: 2px;
+            background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f, #4ecdc4, #ff6b6b);
+            background-size: 200% 200%;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            animation: rotateBorder 3s linear infinite;
+        }
+
+        @keyframes rotateBorder {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .wish-item:hover::before {
+            left: 100%;
+        }
+
+        .wish-item:hover::after {
+            opacity: 1;
+        }
+
+        .wish-item:hover {
+            transform: translateX(5px) scale(1.02);
+            box-shadow: 0 10px 35px rgba(255, 107, 107, 0.3);
+        }
+
+        .wish-item:nth-child(1) { animation-delay: 1.45s; }
+        .wish-item:nth-child(2) { animation-delay: 1.6s; }
+        .wish-item:nth-child(3) { animation-delay: 1.75s; }
+        .wish-item:nth-child(4) { animation-delay: 1.9s; }
+
+        .signature {
+            color: #D6336C;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+        .heart-balloon {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            top: 100vh;
+            z-index: 1;
+            pointer-events: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            animation: floatUpBalloon 4s ease-in forwards;
+        }
+
+        .heart-float {
+            position: fixed;
+            font-size: 2.5em;
+            animation: floatUp 4s ease-in forwards;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* ANIMATIONS */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 1;
+                transform: translateY(0) translateX(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-300px) translateX(100px);
+            }
+        }
+
+        @keyframes floatUpBalloon {
+            0% {
+                opacity: 1;
+                transform: translateY(0) translateX(0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) translateX(80px) scale(0.8);
+            }
+        }
+
+        .celebrate-btn {
+            margin-top: 30px;
+            padding: 15px 50px;
+            font-size: 1.1em;
+            background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .celebrate-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        
+        /* Mobile (320px - 480px) */
+        @media (max-width: 480px) {
+            .login-box {
+                padding: 30px 20px;
+                border: 3px solid #ff7a7a;
+                border-radius: 15px;
+            }
+
+            .avatar-container {
+                width: 130px;
+                height: 130px;
+                margin: 0 auto 20px;
+            }
+
+            .login-box h1 {
+                font-size: 1.3em;
+                margin-bottom: 10px;
+            }
+
+            .login-box p {
+                font-size: 0.8em;
+                margin-bottom: 20px;
+            }
+
+            .password-input-group input {
+                padding: 10px 12px;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+
+            .login-btn {
+                padding: 12px;
+                font-size: 0.95em;
+                min-height: 44px;
+            }
+
+            .birthday-container {
+                padding: 30px 15px;
+            }
+
+            .cake-emoji {
+                font-size: 70px;
+                margin-bottom: 15px;
+            }
+
+            .title-section h1 {
+                font-size: 1.6em;
+                margin-bottom: 10px;
+            }
+
+            .name-gradient {
+                font-size: 1.3em;
+                margin-bottom: 15px;
+            }
+
+            .letter-container {
+                padding: 25px 15px;
+                border-radius: 12px;
+            }
+
+            .letter-header {
+                font-size: 1.1em;
+                padding: 12px 15px;
+                margin: -25px -15px 15px -15px;
+                border-radius: 12px 12px 0 0;
+            }
+
+            .letter-content {
+                font-size: 0.85em;
+                line-height: 1.5;
+            }
+
+            .letter-content p {
+                margin-bottom: 12px;
+            }
+
+            .wishes-list {
+                padding: 20px;
+                margin: 15px auto;
+            }
+
+            .wish-item {
+                padding: 12px;
+                margin: 10px 0;
+                font-size: 0.85em;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .signature {
+                font-size: 0.95em;
+                margin-top: 15px;
+            }
+
+            .celebrate-btn {
+                margin-top: 15px;
+                padding: 12px 30px;
+                font-size: 0.9em;
+                min-height: 44px;
+            }
+        }
+
+        /* Small Tablets (481px - 768px) */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .login-box {
+                padding: 40px 30px;
+                max-width: 85vw;
+            }
+
+            .avatar-container {
+                width: 160px;
+                height: 160px;
+                margin: 0 auto 25px;
+            }
+
+            .login-box h1 {
+                font-size: 1.5em;
+            }
+
+            .login-box p {
+                font-size: 0.9em;
+            }
+
+            .password-input-group input {
+                padding: 11px 14px;
+                font-size: 16px;
+            }
+
+            .login-btn {
+                padding: 12px;
+                font-size: 1em;
+            }
+
+            .birthday-container {
+                padding: 40px 20px;
+            }
+
+            .cake-emoji {
+                font-size: 90px;
+            }
+
+            .title-section h1 {
+                font-size: 2.2em;
+            }
+
+            .name-gradient {
+                font-size: 1.8em;
+            }
+
+            .letter-container {
+                padding: 35px 25px;
+            }
+
+            .letter-header {
+                font-size: 1.4em;
+                padding: 18px 25px;
+                margin: -35px -25px 20px -25px;
+            }
+
+            .letter-content {
+                font-size: 0.95em;
+                line-height: 1.7;
+            }
+
+            .wishes-list {
+                padding: 30px;
+                max-width: 600px;
+            }
+
+            .wish-item {
+                padding: 14px 16px;
+                margin: 12px 0;
+                font-size: 0.95em;
+            }
+
+            .signature {
+                font-size: 1.05em;
+            }
+
+            .celebrate-btn {
+                padding: 13px 40px;
+                font-size: 0.95em;
+            }
+        }
+
+        /* iPad / Large Tablets (769px - 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .birthday-container {
+                padding: 50px 30px;
+            }
+
+            .title-section h1 {
+                font-size: 3em;
+            }
+
+            .name-gradient {
+                font-size: 2.3em;
+            }
+
+            .letter-container {
+                padding: 40px 30px;
+                max-width: 800px;
+            }
+
+            .wishes-list {
+                max-width: 650px;
+            }
+        }
+
+        /* Desktop (1025px+) */
+        @media (min-width: 1025px) {
+            .birthday-container {
+                padding: 60px 20px;
+            }
+
+            .letter-container {
+                max-width: 900px;
+            }
+
+            .wishes-list {
+                max-width: 700px;
+            }
+        }
+
+        /* Landscape Mode */
+        @media (max-height: 600px) and (orientation: landscape) {
+            .login-container {
+                min-height: auto;
+                padding: 20px 0;
+            }
+
+            .login-box {
+                padding: 25px 35px;
+            }
+
+            .avatar-container {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto 15px;
+            }
+
+            .birthday-container {
+                padding: 25px 20px;
+                min-height: auto;
+            }
+
+            .cake-emoji {
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+
+            .title-section h1 {
+                font-size: 1.5em;
+                margin-bottom: 8px;
+            }
+
+            .name-gradient {
+                font-size: 1.3em;
+            }
+
+            .letter-container {
+                padding: 25px 20px;
+                max-height: 70vh;
+                overflow-y: auto;
+            }
+
+            .wishes-list {
+                padding: 20px;
+            }
+        }
+
+        /* Touch Devices - Larger touch targets */
+        @media (hover: none) and (pointer: coarse) {
+            .login-btn,
+            .celebrate-btn,
+            .wish-item {
+                min-height: 48px;
+                min-width: 48px;
+            }
+
+            .password-input-group input {
+                min-height: 48px;
+            }
+        }
+
+        /* High DPI Screens */
+        @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) {
+            .login-box {
+                border-width: 3px;
+            }
+        }
+
+        /* Reduce Motion - Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Dark Mode Support */
+        @media (prefers-color-scheme: dark) {
+            .letter-container {
+                background: rgba(30, 30, 30, 0.98);
+                color: #e0e0e0;
+            }
+
+            .letter-content {
+                color: #e0e0e0;
+            }
+
+            .wish-item {
+                background: #333;
+                color: #e0e0e0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- LOGIN PAGE -->
+    <div class="login-container" id="loginContainer">
+        <div class="login-box">
+            <div class="avatar-container">
+                <img src="f42498c0-6b81-4a3f-a0a2-4efffa0caeb2.jpeg" alt="Avatar">
+            </div>
+            <h1>Password</h1>
+            <p>Nhập mật khẩu để xem lời chúc mừng</p>
+            <div class="password-input-group">
+                <input 
+                    type="password" 
+                    id="passwordInput" 
+                    placeholder="Nhập mật khẩu..."
+                    onkeypress="handleKeyPress(event)"
+                >
+            </div>
+            <button class="login-btn" onclick="checkPassword()">ENTER</button>
+            <div class="error-message" id="errorMessage">❌ Mật khẩu không đúng! Thử lại nha.</div>
+        </div>
+    </div>
+
+    <!-- BIRTHDAY PAGE -->
+    <div class="birthday-container" id="birthdayContainer">
+        <div class="birthday-content">
+            <div class="cake-emoji">🎂</div>
+            
+            <div class="title-section">
+                <h1>CHÚC MỪNG SINH NHẬT!</h1>
+                <div class="name-gradient">Nguyễn Thanh Nhàn</div>
+            </div>
+
+            <div class="letter-container">
+                <div class="letter-header">💌 Một Lá Thư Chúc Mừng 💌</div>
+                
+                <div class="letter-content">
+                    <p>
+                        Hôm nay là một ngày thật đặc biệt – ngày em thêm một tuổi mới trong hành trình của mình. Em chính là niềm vui, là nụ cười dịu dàng và là sự duyên dáng mang đến cảm giác ấm áp cho những người xung quanh.
+                    </p>
+                    
+                    <p>
+                        Trong ngày sinh nhật này, anh muốn gửi đến Nhàn những lời chúc chân thành nhất từ trái tim. Chúc em một năm tuổi mới tràn ngập niềm vui, hạnh phúc và thật nhiều thành công mới đang chờ phía trước.
+                    </p>
+                    
+                    <p>
+                        Mong rằng Nhàn sẽ luôn giữ được sự hiền hòa trong tâm hồn, lòng tử tế trong cách sống và nụ cười rạng rỡ trên môi. Ước gì mỗi ngày trôi qua với em đều là một hành trình tuyệt vời, nơi từng khoảnh khắc nhỏ bé cũng trở thành những kỷ niệm đáng nhớ.
+                    </p>
+                    
+                    <p>
+                        Chúc Nhàn luôn có thật nhiều sức khỏe, thành công trong những điều em theo đuổi, đủ yêu thương để sưởi ấm trái tim và đủ bình an để mỉm cười với cuộc sống. Dù ở bất cứ đâu, em vẫn luôn là người quý giá, đáng yêu và xứng đáng với tất cả những điều tốt đẹp nhất.
+                    </p>
+                    
+                    <p>
+                        Cảm ơn em vì đã là một phần rất đặc biệt trong cuộc đời anh. Hãy tận hưởng trọn vẹn từng giây phút của ngày hôm nay nhé, vì Nhàn hoàn toàn xứng đáng với hạnh phúc ấy 🎂💖
+                    </p>
+                </div>
+
+                <div class="wishes-list">
+                    <div class="wish-item">✨ Nhàn ơi, chúc em luôn vui vẻ và xinh xắn</div>
+                    <div class="wish-item">✨ Chúc Nhàn luôn rạng rỡ và hạnh phúc</div>
+                    <div class="wish-item">💫 Mọi ước mơ của em đều dần thành hiện thực</div>
+                    <div class="wish-item">🌟 Luôn khỏe mạnh và mỉm cười thật nhiều</div>
+                </div>
+
+                <div class="signature">
+                    Với tình cảm chân thành,<br>
+                    💝 Happy Birthday Nhàn! 💝
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <script>
+        // Mật khẩu (bạn có thể thay đổi)
+        const PASSWORD = "nhan2009";
+        let audioPlayer = null;
+
+        function checkPassword() {
+            const input = document.getElementById('passwordInput').value;
+            const errorMsg = document.getElementById('errorMessage');
+
+            if (input === PASSWORD) {
+                errorMsg.classList.remove('show');
+                document.getElementById('loginContainer').classList.add('hidden');
+                document.getElementById('birthdayContainer').classList.add('show');
+                createConfetti();
+                setTimeout(() => createConfetti(), 500);
+                setTimeout(() => createConfetti(), 1000);
+                
+                // Phát nhạc mừng sinh nhật
+                playBirthdayMusic();
+            } else {
+                errorMsg.classList.add('show');
+                document.getElementById('passwordInput').value = '';
+                document.getElementById('passwordInput').focus();
+            }
+        }
+
+        function playBirthdayMusic() {
+            // Sử dụng file nhạc đã tải về - Phát như nhạc nền
+            if (!audioPlayer) {
+                // Tạo audio element ẩn
+                audioPlayer = document.createElement('audio');
+                audioPlayer.id = 'birthdayAudio';
+                audioPlayer.autoplay = true;
+                audioPlayer.loop = true;  // Lặp lại
+                audioPlayer.volume = 0.6; // Âm lượng 60%
+                
+                // Thêm source nhạc từ file tải về
+                const source = document.createElement('source');
+                source.src = './videoplayback.mp4';
+                source.type = 'video/mp4';
+                audioPlayer.appendChild(source);
+                
+                document.body.appendChild(audioPlayer);
+                
+                // Tạo custom music widget đẹp
+                const musicWidget = document.createElement('div');
+                musicWidget.id = 'musicWidget';
+                musicWidget.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div class="music-icon">♫</div>
+                        <div class="music-info">
+                            <div class="music-title">🎉 KHÚC HÁT MỪNG SINH NHẬT 🎉</div>
+                            <div class="music-status">Đang phát...</div>
+                        </div>
+                        <button class="music-toggle" onclick="toggleMusic()">⏸</button>
+                    </div>
+                `;
+                
+                musicWidget.style.cssText = `
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 999;
+                    background: linear-gradient(135deg, #FF6B9D 0%, #D6336C 100%);
+                    color: white;
+                    padding: 15px 20px;
+                    border-radius: 15px;
+                    box-shadow: 0 8px 32px rgba(255, 107, 157, 0.5);
+                    border: 2px solid rgba(255, 255, 255, 0.3);
+                    backdrop-filter: blur(10px);
+                    min-width: 300px;
+                    animation: slideInUp 0.6s ease-out;
+                `;
+                
+                document.body.appendChild(musicWidget);
+                
+                // Thêm style cho music icon animation
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    .music-icon {
+                        font-size: 24px;
+                        animation: musicBounce 0.6s ease-in-out infinite;
+                    }
+                    
+                    @keyframes musicBounce {
+                        0%, 100% { transform: scale(1) rotateY(0deg); }
+                        50% { transform: scale(1.1) rotateY(15deg); }
+                    }
+                    
+                    .music-info {
+                        flex: 1;
+                    }
+                    
+                    .music-title {
+                        font-weight: bold;
+                        font-size: 14px;
+                        margin-bottom: 3px;
+                    }
+                    
+                    .music-status {
+                        font-size: 12px;
+                        opacity: 0.8;
+                    }
+                    
+                    .music-toggle {
+                        background: rgba(255, 255, 255, 0.25);
+                        border: none;
+                        color: white;
+                        padding: 8px 12px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        transition: all 0.3s ease;
+                    }
+                    
+                    .music-toggle:hover {
+                        background: rgba(255, 255, 255, 0.35);
+                        transform: scale(1.1);
+                    }
+                    
+                    .music-toggle:active {
+                        transform: scale(0.95);
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        }
+        
+        function toggleMusic() {
+            if (audioPlayer) {
+                const btn = document.querySelector('.music-toggle');
+                if (audioPlayer.paused) {
+                    audioPlayer.play();
+                    btn.textContent = '⏸';
+                    document.querySelector('.music-status').textContent = 'Đang phát...';
+                } else {
+                    audioPlayer.pause();
+                    btn.textContent = '▶';
+                    document.querySelector('.music-status').textContent = 'Tạm dừng';
+                }
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                checkPassword();
+            }
+        }
+
+        function createConfetti() {
+            const balloons = ['🎈', '🎈', '🎈', '🎈', '🎈'];
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const balloon = document.createElement('div');
+                    balloon.classList.add('heart-balloon');
+                    balloon.textContent = balloons[Math.floor(Math.random() * balloons.length)];
+                    balloon.style.left = Math.random() * window.innerWidth + 'px';
+                    document.body.appendChild(balloon);
+                    
+                    setTimeout(() => balloon.remove(), 4000);
+                }, i * 80);
+            }
+        }
+
+        function celebrate() {
+            createConfetti();
+            createConfetti();
+            
+            const hearts = ['❤️', '💛', '💚', '💙', '💜', '🧡'];
+            for (let i = 0; i < 15; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.classList.add('heart-float');
+                    heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                    heart.style.left = Math.random() * window.innerWidth + 'px';
+                    heart.style.top = window.innerHeight + 'px';
+                    document.body.appendChild(heart);
+                    setTimeout(() => heart.remove(), 4000);
+                }, i * 100);
+            }
+        }
+
+        // Focus input khi load
+        window.addEventListener('load', () => {
+            document.getElementById('passwordInput').focus();
+        });
+    </script>
+</body>
+</html>
